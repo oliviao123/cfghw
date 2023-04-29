@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sum Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sum Calculator</h1>
+      <h3>PLEASE ENTER A NUMBER BELOW</h3>
+      <form>
+        <label for="num1">Enter number 1:</label>
+        <input type="text" id="num1" name="num1" onkeypress="return isNumberKey(event)">
+        <br>
+        <label for="num2">Enter number 2:</label>
+        <input type="text" id="num2" name="num2" onkeypress="return isNumberKey(event)">
+        <br>
+        <button type="button" onclick="calculateSum()">Calculate Sum</button>
+      </form>
+      <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
